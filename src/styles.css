@@ -1,10 +1,10 @@
 :root{
     --text-dark: #323232;
-    --text-light: #f4e5c2;
     --branding-dark: #295f4e;
     --branding-light: #6db193;
     --heading-font: 'Noto Serif Display', serif;
     --text-font: 'Noto Sans Display', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -12,9 +12,42 @@ h1, h2, h3, h4, h5, h6{
     color: var(--text-dark);
 }
 
+.hero{
+    text-align: center;
+    margin: 130px auto;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
 .hero h1{
     font-family: var(--heading-font);
     color: var(--text-dark);
     font-weight: 600;
     font-size: 96px;
+    
 }
+
+.hero a{
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: var(--text-font);
+    border-radius: 4px;
+    background-color: var(--branding-dark);
+    color: white;
+    transition: all 150ms ease-in-out;
+}
+.hero a:hover{
+    background-color: white;
+    border: 1.5px solid var(--branding-dark);
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.hero p, h2{
+    font-family: var(--text-font);
+    color: var(--text-dark);
+    font-weight: 400;
+    font-size: 28px;
+}
+
+
