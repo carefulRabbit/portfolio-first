@@ -1,7 +1,7 @@
 :root{
     --text-dark: #323232;
-    --branding-dark: #295f4e;
-    --branding-light: #6db193;
+    --branding-dark: #1d4438;
+    --branding-light: #295f4e3a;
     --heading-font: 'Noto Serif Display', serif;
     --text-font: 'Noto Sans Display', sans-serif;
     
@@ -12,9 +12,15 @@ h1, h2, h3, h4, h5, h6{
     color: var(--text-dark);
 }
 
+.hero-container{
+    background-color: var(--branding-light);
+    width: 100%;
+    
+}
 .hero{
     text-align: center;
-    margin: 130px auto;
+    margin: 0 auto;
+    padding: 120px;
     line-height: 1.5;
     max-width: 800px;
 }
@@ -32,6 +38,7 @@ h1, h2, h3, h4, h5, h6{
     text-decoration: none;
     font-family: var(--text-font);
     border-radius: 4px;
+    border: 1.5px solid var(--branding-dark);
     background-color: var(--branding-dark);
     color: white;
     transition: all 150ms ease-in-out;
@@ -46,7 +53,6 @@ h1, h2, h3, h4, h5, h6{
 .hero p, h2{
     font-family: var(--text-font);
     color: var(--text-dark);
-    font-weight: 400;
     font-size: 28px;
 }
 
