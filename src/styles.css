@@ -44,10 +44,8 @@ h1, h2, h3, h4, h5, h6{
     transition: all 150ms ease-in-out;
 }
 .hero a:hover{
-    background-color: white;
-    border: 1.5px solid var(--branding-dark);
-    color: var(--text-dark);
-    font-weight: 600;
+    box-shadow: 3px 5px 10px 4px rgba(0,0,0,0.4);
+    
 }
 
 .hero p, h2{
