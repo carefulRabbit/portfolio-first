@@ -15,31 +15,11 @@ h1, h2, h3, h4, h5, h6{
     color: var(--text-dark);
     text-align: center;
     font-weight: 600;
+    margin: 0;
 }
 
 img{
     border-radius: 4px;
-}
-
-.hero-container{
-    background-color: var(--branding-light);
-    width: 100%;
-    
-}
-.hero{
-    text-align: center;
-    margin: 0 auto;
-    padding: 120px;
-    line-height: 1.5;
-    max-width: 800px;
-}
-
-.hero h1{
-    font-family: var(--heading-font);
-    color: var(--text-dark);
-    font-weight: 600;
-    font-size: 96px;
-    
 }
 
 .button-style{
@@ -60,16 +40,39 @@ img{
     
 }
 
+.text-content{
+    padding: 110px 40px;
+}
+
+
+.hero-container{
+    background-color: var(--branding-light);
+    width: 100%;
+    
+}
+.hero{
+    text-align: center;
+    margin: 0 auto;
+    padding: 120px;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+.hero h1{
+    font-size: 96px;
+    
+}
+
 .hero p, h2{
     font-family: var(--text-font);
-    color: var(--text-dark);
     font-size: 28px;
     font-weight: 400;
 }
 
 .container h3{
     font-family: var(--text-font);
-    background-color: #f1f2eb;
+    font-size: 40px;
+    background-color: var(--background-light);
     border-radius: 5px;
     padding: 10px;
     background-position: 100%;
@@ -81,6 +84,7 @@ img{
 .container p{
     padding: 20px 0;
 }
+
 
 @media(max-width: 600px){
     .hero h1{
@@ -95,5 +99,15 @@ img{
     }
     .container{
         text-align: center;
+    }
+    .container h3{
+        font-size: 34px;
+        background-color: white;
+    }
+    .container h4{
+        display: none;
+    }
+    .text-content{
+        padding: 10px 0;
     }
 }
