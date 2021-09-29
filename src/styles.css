@@ -12,6 +12,8 @@
 }
 body{
     text-rendering: optimizeLegibility;
+    text-align: center;
+    font-family: var(--text-font);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -90,7 +92,42 @@ img{
     padding: 20px 0;
 }
 
+.upper h1{
+    font-size: 60px;
+}
+.upper{
+    text-align: left;
+}
 
+.profile{
+    border-radius: 50%;
+}
+
+footer .work-inquire{
+    background: var(--branding-light);
+    padding: 30px;
+    border-radius: 10px;
+}
+footer .work-inquire h4{
+    font-size: 48px;
+}
+
+.github, .email, .twitter{
+    margin: 30px 25px;
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: var(--branding-light);
+    color: var(--branding-dark);
+    transition: all 150ms ease-in-out;
+}
+
+.github:hover, .email:hover, .twitter:hover{
+    text-decoration: none;
+    color: white;
+    background-color: var(--branding-dark);
+
+}
 @media(max-width: 600px){
     .hero h1{
         font-size: 60px;
@@ -114,5 +151,8 @@ img{
     }
     .text-content{
         padding: 10px 0;
+    }
+    .upper img{
+        display: none;
     }
 }
