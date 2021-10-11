@@ -23,9 +23,13 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 600;
     margin: 0;
 }
+h1{
+    font-size: 66px;
+}
 
 img{
     border-radius: 4px;
+    max-height: 500px;
 }
 
 .button-style{
@@ -102,6 +106,23 @@ img{
 .profile{
     border-radius: 50%;
 }
+.contact-page{
+    max-width: 800px;
+    background-color: var(--branding-light);
+    padding: 30px 20px;
+    border-radius: 4px;
+}
+.contact-link{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    color: var(--text-dark);
+    transition: all 150ms ease-in-out ;
+}
+.contact-link:hover{
+    color: white;
+}
 
 footer .work-inquire{
     background: var(--branding-light);
@@ -110,6 +131,9 @@ footer .work-inquire{
 }
 footer .work-inquire h4{
     font-size: 48px;
+}
+footer p{
+    text-align: center;
 }
 
 .github, .email, .twitter{
@@ -153,6 +177,13 @@ footer .work-inquire h4{
         padding: 10px 0;
     }
     .upper img{
+        display: none;
+    }
+    .contact-page{
+        padding: 15px;
+        background-color: white;
+    }
+    .contact-link{
         display: none;
     }
 }
